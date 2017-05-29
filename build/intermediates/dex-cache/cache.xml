@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/299c1110070f03bb48e31a8d9085ee90ed44657a/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_ea49aa5daf6a66a37d1acc90f36b782c9a70a50f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/b2449d35e632555c9f296fb43d138b3cfbbdc509/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_90a3f95765714c42ae616ce961b78a562eff0e1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/dc0a62aeeb94c3fd74d80cedc05326e2fc8430c3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_260f95c8e24d3045af472c3be7399e85a5077154/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c87a1a4c5b7bbf7d7cd80abda04b771897ac8e65/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/b2449d35e632555c9f296fb43d138b3cfbbdc509/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d5f7d7ee5480a1ce5f50d0a170e45f117db5b7a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/f45e3f3af2fa8e938140653c81cf553be89df267/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e433ee5fcc43f948a7b213bc5f8bf5ab1d10ccd6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/6fd8a8741c6a20fddb88691507fa0a4ef492c140/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_6649df9ad5fe549043ffe7874eac5938f0efa945/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/299c1110070f03bb48e31a8d9085ee90ed44657a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0a17e0595b8dcef43231dcff009cc0e87bd206d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="832a11ef1b8b05b874f48e4f0f5d90e0fbb0984c">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_7249767e81b30ebebb91c483d9d2b74ca16c7e59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/3c247e9b6828b01174c931a19a50fe1ee5589096/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1e51a0a942b0afef0f1762fe352b513fd9e73593/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/ee952a4d4e29ad3512b8aa0d9e8adeb7ab71f21f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_081c3db04566a7383be5644ed6ee778af4a582b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/34a36fab214baae8eb7defe996d4cbe3ebcef245/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0b23b141e0463ea68cb23fe4005c2a6da810cfa4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/049fc4b22650b0bd0eba04cd4ee4f2c3cd127822/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_d3d0ff0ad3b71bab698abbeab83eedf0adb4d015/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/6fd8a8741c6a20fddb88691507fa0a4ef492c140/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2f6e88e23b26467e4b7edfae4558575022cbd757/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_39c5241376936b9a92cd69e3075b864a3ff7ef7c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/05399f5effd936dcf9d7d5f7d84e72f08840929b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7962aa51ddcc97d7476fe782fccb482281fbc608/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/334c6ec5c679cfd3244251446dc679e08b8c47f1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c170bcdefa02b2323112c69af5d9bae53c9d4124/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/a11072fd4c24ff42ea3d77a8c6eec36137ac7cdc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_463e89623a8b7e41ba6acb2a2b2757f4e653b0b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/34a36fab214baae8eb7defe996d4cbe3ebcef245/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_3ef6ea76fed81bf544ea3ccab32c6ce0314d40f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/guilherme/.android/build-cache/049fc4b22650b0bd0eba04cd4ee4f2c3cd127822/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/guilherme/AndroidStudioProjects/Decrypt/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5c790e9045c1ac49b7de1be89f53855cb2ceed64/classes.dex" />
+    </item>
+
+</items>
