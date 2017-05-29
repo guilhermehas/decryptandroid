@@ -32,6 +32,12 @@ import java.net.URLConnection;
 import java.net.URLEncoder;
 
 public class MainActivity extends AppCompatActivity {
+    static{
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+    }
+
+
     private EditText editText;
     private  TextView textView;
 
@@ -82,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private String getCodeBase(){
-        return "mysterious-earth-87823.herokuapp.com";
+        return "decrypt.herokuapp.com";
     }
 
     private String http(String s) throws JSONException, IOException {
@@ -128,6 +134,9 @@ public class MainActivity extends AppCompatActivity {
             while ((line = br.readLine()) != null) {
                 sb.append(line);
             }
+
+            //line = br.readLine();
+            //sb.append(line);
 
             response = sb.toString();
             Log.d("resp",response);
@@ -176,8 +185,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
+        //StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        //StrictMode.setThreadPolicy(policy);
 
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
