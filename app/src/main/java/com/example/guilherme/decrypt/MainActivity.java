@@ -1,5 +1,6 @@
 package com.example.guilherme.decrypt;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.design.widget.FloatingActionButton;
@@ -24,11 +25,17 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 
 public class MainActivity extends AppCompatActivity {
+    private EditText editText;
+    private  TextView textView;
+
+
     private String getTexto(){
         return "dcqvzmlgdbofubvlrxclaoseqozwboqpuairuelzpohcrlnzgjphisqvzphrovxxzrxqvjfa\n" +
                 "\n" +
@@ -75,60 +82,93 @@ public class MainActivity extends AppCompatActivity {
 
 
     private String getCodeBase(){
-        return "http://10.0.2.2:3000/";
+        return "mysterious-earth-87823.herokuapp.com";
     }
 
     private String http(String s) throws JSONException, IOException {
-        Log.d("aaa","start");
-        URL url;
-        URLConnection urlConn;
-        DataOutputStream printout;
-        //DataInputStream  input;
-        url = new URL(getCodeBase().toString() + "welcome/index");
-        urlConn = url.openConnection();
-        urlConn.setDoInput (true);
-        urlConn.setDoOutput (true);
-        urlConn.setUseCaches (false);
-        urlConn.setRequestProperty("Content-Type","application/json");
-        //urlConn.setRequestProperty("Host", "android.schoolportal.gr");
-        urlConn.connect();
-        //Create JSONObject here
-        JSONObject jsonParam = new JSONObject();
-        jsonParam.put("text", s);
+        String ret = "";
+        try
+        {
+            Uri.Builder builder = new Uri.Builder();
+            builder.scheme("https");
+            builder.authority(getCodeBase())
+                    .appendPath("welcome")
+                    .appendPath("find");
+            //builder.appendQueryParameter("text", getTexto());
 
-        Log.d("aaa","s2");
-        // Send POST output.
-        printout = new DataOutputStream(urlConn.getOutputStream ());
-        printout.writeBytes(URLEncoder.encode(jsonParam.toString(),"UTF-8"));
-        printout.flush ();
-        printout.close ();
+            URL url = new URL(builder.build().toString());
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
+            connection.setReadTimeout(10000);
+            connection.setConnectTimeout(15000);
+            connection.setRequestMethod("POST");
+            connection.setDoInput(true);
+            connection.setDoOutput(true);
+            connection.setRequestProperty("Content-Type", "application/json");
 
-        Log.d("aaa","s3");
-        urlConn.connect();
-        Log.d("aaa","s4");
+            JSONObject jsonBody = new JSONObject();
+            jsonBody.put("text",getTexto());
+            String body = jsonBody.toString();
 
-        String response = "";
+            OutputStream output = connection.getOutputStream();
+            DataOutputStream os = new DataOutputStream(output);
+            os.writeBytes(body);
+            os.flush();
+            os.close();
 
+            connection.connect();
 
-        InputStream iStream = urlConn.getInputStream();
-        BufferedReader br = new BufferedReader(new InputStreamReader(iStream, "utf8"));
-        StringBuffer sb = new StringBuffer();
-        String line = "";
+            String response = "";
 
-        Log.d("aaa","s5");
+            InputStream iStream = connection.getInputStream();
+            BufferedReader br = new BufferedReader(new InputStreamReader(iStream, "utf8"));
+            StringBuffer sb = new StringBuffer();
+            String line = "";
 
-        while ((line = br.readLine()) != null) {
-            sb.append(line);
+            while ((line = br.readLine()) != null) {
+                sb.append(line);
+            }
+
+            response = sb.toString();
+            Log.d("resp",response);
+
+            JSONObject json = new JSONObject(response);
+            ret = json.getString("text");
+            return ret;
+
+        }
+        catch (IOException e)
+        {
+            Log.e("erroDebug", e.getMessage());
         }
 
-        response = sb.toString();
+        return ret;
+    }
 
-
-        Log.d("text",response);
-        String result = (new JSONObject(response)).getString("text");
-
-        return result;
+    private void runThread(){
+        final Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                String input = editText.getText().toString();
+                input = getTexto();
+                input = input.replace(" ","").replace("\n","");
+                String result = null;
+                try {
+                    result = http(input);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                textView.setText(result);
+            }
+        };/*
+                new Thread(){
+                        public void run() {
+                            runOnUiThread(runnable);
+                    }
+                }.start();*/
+        runOnUiThread(runnable);
     }
 
 
@@ -143,39 +183,15 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final EditText editText = (EditText) findViewById(R.id.editText);
+        editText = (EditText) findViewById(R.id.editText);
 
-        final TextView textView = (TextView) findViewById(R.id.textView);
+        textView = (TextView) findViewById(R.id.textView);
 
         final Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
-
-                final Runnable runnable = new Runnable() {
-                    @Override
-                    public void run() {
-                        String input = editText.getText().toString();
-                        input = getTexto();
-                        input = input.replace(" ","").replace("\n","");
-                        String result = null;
-                        try {
-                            result = http(input);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        textView.setText(result);
-                    }
-                };
-                new Thread(){
-                        public void run() {
-                            runOnUiThread(runnable);
-                    }
-                }.start();
-
-
+                runThread();
             }
         });
 
