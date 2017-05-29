@@ -44,47 +44,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     private String getTexto(){
-        return "dcqvzmlgdbofubvlrxclaoseqozwboqpuairuelzpohcrlnzgjphisqvzphrovxxzrxqvjfa\n" +
-                "\n" +
-                "fjfnxuyklwyludyoshuzhpkvdbpjbuelapzsjqahzrfbwvcahcpzpdfjqvavlrhzceyiqluo\n" +
-                "\n" +
-                "wbtvnloahibdvibfnrlnzgjphisdcydhiyzfqactoswpsibvuxuyiesmpdanzjdoovbbzdps\n" +
-                "\n" +
-                "vbedvyhxkosllduiqacpqwohhsbcpahisdcyopvdrfaactiwbsafmcnqozsxffylsnufklnx\n" +
-                "\n" +
-                "poionoyqbiszsqvzwpgchexfvcahcpkamyobznwbqvwseybjdoopkrosleqsofubpkroslmj\n" +
-                "\n" +
-                "fofublbfzeoeawspaypvuzylsdgbkkbdagvtklzhuelmtysvqprhonbuoxkhcptiygulmowb\n" +
-                "\n" +
-                "kvelrnooaszifhytciysuelrpqsmdmrjauelrpqsmdneistfzvcaujotaysuelaxoavxlnoo\n" +
-                "\n" +
-                "oakdkfrzoahzkbqlmhtvdnowzffruytohcpmimabjliicfjxahzkbqlmhtvdnowzffxijkbh\n" +
-                "\n" +
-                "cpmimabjliixbytawvgtlnzcbgddhnyupajvaisyeoeawsjhhtkhcphvzbbkkowbsqpuiiub\n" +
-                "\n" +
-                "kkowbajcuiiuxbyziesnpjoirexfbtksntzairhlknpfrgpatcsxxazgpiiolrovfelvkbbw\n" +
-                "\n" +
-                "pnaovfolyiluzeoemioqvjcbdgljevbeiloiesycflvbexwktxfvykiokbpzjvbbzdpsvbed\n" +
-                "\n" +
-                "vyrxzgpktcseofgpkrzlytcooaactdooslrdbhqvbtqvzcvfovfthotogxlslzribzzppoio\n" +
-                "\n" +
-                "noygbtacpqwohhsbcpanzcbgddhnyupazvxazzeahzsboacqowirmomhidyvhphcpoempzfl\n" +
-                "\n" +
-                "gsfbbdleyooaactcfptatmsfvpzaawirmrpwuxmotovddriirxevntpszopsdbjqzzacikzu\n" +
-                "\n" +
-                "tcsfxyowxbytawvgtlnzcbgddhnyhiblvgqvwcvubvucvmieumlzsvbeelmqvwzwkiiutbly\n" +
-                "\n" +
-                "pchzcoinyjkkvcahcparzszflgsfbbqyudhxevntpszodanwofantitvqaemvjprdcaoiono\n" +
-                "\n" +
-                "ygbtacpqwohhsbcpanzcbgddhnyhiblqtkwirhnyhibtjgkwirdemsuelowffyohybsobzdh\n" +
-                "\n" +
-                "xbyrvdnojasziqvzclbzzjdoohfboslfdfnxtzcqcaeoecsbsliilrdgpdzhibkvncfjxahz\n" +
-                "\n" +
-                "bjdoopkrgpatcsnyladogdrusvbecvmhbonzusvbecvmsxmnludtsbozbtksntzairmbaowb\n" +
-                "\n" +
-                "awpmomzjdoohfboslfdfnxtzcqcaeoecsbsliiludgllduiqbkdkhcplamhixuyxqkvdzobs\n" +
-                "\n" +
-                "obzdhxbyrvdhoebarddfzlalduiqzowbumphtzfmfnciqcmfseovfahtpkrosllzgtbygxdv";
+        //String s = "dcqvzmlgdbofubvlrxclaoseqozwboqpuairuelzpohcrlnzgjphisqvzphrovxxzrxqvjfafjfnxuyklwyludyoshuzhpkvdbpjbuelapzsjqahzrfbwvcahcpzpdfjqvavlrhzceyiqluowbtvnloahibdvibfnrlnzgjphisdcydhiyzfqactoswpsibvuxuyiesmpdanzjdoovbbzdpsvbedvyhxkosllduiqacpqwohhsbcpahisdcyopvdrfaactiwbsafmcnqozsxffylsnufklnxpoionoyqbiszsqvzwpgchexfvcahcpkamyobznwbqvwseybjdoopkrosleqsofubpkroslmjfofublbfzeoeawspaypvuzylsdgbkkbdagvtklzhuelmtysvqprhonbuoxkhcptiygulmowbkvelrnooaszifhytciysuelrpqsmdmrjauelrpqsmdneistfzvcaujotaysuelaxoavxlnoooakdkfrzoahzkbqlmhtvdnowzffruytohcpmimabjliicfjxahzkbqlmhtvdnowzffxijkbhcpmimabjliixbytawvgtlnzcbgddhnyupajvaisyeoeawsjhhtkhcphvzbbkkowbsqpuiiubkkowbajcuiiuxbyziesnpjoirexfbtksntzairhlknpfrgpatcsxxazgpiiolrovfelvkbbwpnaovfolyiluzeoemioqvjcbdgljevbeiloiesycflvbexwktxfvykiokbpzjvbbzdpsvbedvyrxzgpktcseofgpkrzlytcooaactdooslrdbhqvbtqvzcvfovfthotogxlslzribzzppoionoygbtacpqwohhsbcpanzcbgddhnyupazvxazzeahzsboacqowirmomhidyvhphcpoempzflgsfbbdleyooaactcfptatmsfvpzaawirmrpwuxmotovddriirxevntpszopsdbjqzzacikzutcsfxyowxbytawvgtlnzcbgddhnyhiblvgqvwcvubvucvmieumlzsvbeelmqvwzwkiiutblypchzcoinyjkkvcahcparzszflgsfbbqyudhxevntpszodanwofantitvqaemvjprdcaoionoygbtacpqwohhsbcpanzcbgddhnyhiblqtkwirhnyhibtjgkwirdemsuelowffyohybsobzdhxbyrvdnojasziqvzclbzzjdoohfboslfdfnxtzcqcaeoecsbsliilrdgpdzhibkvncfjxahzbjdoopkrgpatcsnyladogdrusvbecvmhbonzusvbecvmsxmnludtsbozbtksntzairmbaowbawpmomzjdoohfboslfdfnxtzcqcaeoecsbsliiludgllduiqbkdkhcplamhixuyxqkvdzobsobzdhxbyrvdhoebarddfzlalduiqzowbumphtzfmfnciqcmfseovfahtpkrosllzgtbygxdvoevrpzfqozcfuceoehoebactphvczaggpdlitpwnludbceploieshtutcsgfyhpjsievfovfelvkbbozniqsmfncirdjyahzsboacvbbzdpsvbeqvmjisjglrovfahtpkrjglrovfkpbwqoioaoywwfkziesgtnhotsltowbrvcrnzgtxuyvlrnldtcoufarppujzkgzbfppnpkrosleqsofubpkroslmjfofublbfzeoeacvoacsxmbpuenwtxuyvlrnlpdgsuqozlxhzczbmwodmjgqvvmbnyooqstieshzciiudolvirfzeoaovbqogxcsvykfjkmqovijotqsyvppslowbsvcahdbueljebbatymvafkajuesvglnbsobzdhxbyrvdxffxazsdfzlawcombzvcasqpyygwwfubrosvebrzhixahdssosdhdqiqozlxhzczbmcvdooulfoshbpbexuoavoaelrovffyfxkrvykeqssvddcdsyqvwgogqlmwfgftudvbedvyhxkoshtdhxxzbdlrbpuenwtxuyvlrwwlsnseqozbpottugwsgobdicigludhimqpkavoiomigzuelrpqsmdpnovfplvhxbywltacxitpaqwkwfiihiblvgqvbpuenwtxuyieszglndbhxuyieshzyndbhtlmtqvzqpfovexfbtksntzairhlknpfrgpatcsfxyowyfdynfjfueactiwqtugxffxapgboaelrcwthpiszooesevbezyztmwirahdbhxuyqbonevfovfbhmieoaelrcwthpisxbytawvgtlnzcbgddhnyupatvsbhcpievgulmowbsvcahvtubycxpydykairdxaoaboaelrovffyfxkrvykeqssvacxkuoshtxffbwzieikzutcsfxyowxtopyhdglfuypkrbzksvkuehoxqkvdnojrhbuzhfgvykgjrtxpyabhpdtafsnxudclimttabsbcazglimwpkzbfpzvcazzeahzaixczsladypoicwbyowbtddooahibzzpxbyzcemhibmjlicaeoevwsxuydssmeoexouqszpkrjglrvzmqoztxfoshnycwbyzkbftnyezdjknowfbbeoaoqsblktqvpavnovfbhmieuzylsdgtlnjszfzlaeyabkpiwfgjhuihohbpiiesdxhgzcgdvyrosveldcsifthpisvykfzabilxgboopkhzhibtbtksntzairhlkwabgnpktcsnxuyvlrnlpdpbulactjpzqyudhgrsvcaapwaikzzxuygbdgpuinvuelzpohcludnicabzxqoiooaqseltdcfcizcemhibmdhecaeoensbxuydssmeoeacxivaiesvtyairpslmtssmjsiqwodacxkuoshthcwbacjmcieoezosqobtksntzairhlknpfrwpoogrjehqtdwqpuyjifslmnesmmievfjknntbrrspccwtrwjcqvzqhczcgxsgieszlytcooalqtomyludbcephrieo";
+
+        String s = editText.getText().toString();
+        s = s.replace(" ","").replace("\n","");
+        return s;
     }
 
 
@@ -128,6 +92,10 @@ public class MainActivity extends AppCompatActivity {
             Log.d("passo","2");
 
             String response = "";
+
+            int status = connection.getResponseCode();
+
+            Log.d("status",String.valueOf(status));
 
             InputStream iStream = connection.getInputStream();
             Log.d("passo","3");
