@@ -1,6 +1,7 @@
 package com.example.guilherme.decrypt;
 
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.design.widget.FloatingActionButton;
@@ -122,22 +123,26 @@ public class MainActivity extends AppCompatActivity {
             os.flush();
             os.close();
 
+            Log.d("passo","1");
             connection.connect();
+            Log.d("passo","2");
 
             String response = "";
 
             InputStream iStream = connection.getInputStream();
+            Log.d("passo","3");
             BufferedReader br = new BufferedReader(new InputStreamReader(iStream, "utf8"));
+            Log.d("passo","4");
             StringBuffer sb = new StringBuffer();
             String line = "";
+            Log.d("passo","5");
 
-            while ((line = br.readLine()) != null) {
+
+            while ((line = br.readLine()) != null)
                 sb.append(line);
-            }
 
-            //line = br.readLine();
-            //sb.append(line);
 
+            Log.d("passo","4");
             response = sb.toString();
             Log.d("resp",response);
 
@@ -152,6 +157,29 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return ret;
+    }
+
+
+    private class Assync extends AsyncTask<String, Integer, String> {
+
+        protected String doInBackground(String... s){
+            try {
+                return http(s[0]);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+
+        protected void onPostExecute(String result) {
+            textView.setText(result);
+        }
+
+        protected void onProgressUpdate(Integer p) {}
+
     }
 
     private void runThread(){
@@ -171,13 +199,13 @@ public class MainActivity extends AppCompatActivity {
                 }
                 textView.setText(result);
             }
-        };/*
+        };
                 new Thread(){
                         public void run() {
                             runOnUiThread(runnable);
                     }
-                }.start();*/
-        runOnUiThread(runnable);
+                }.start();
+        //runOnUiThread(runnable);
     }
 
 
@@ -192,6 +220,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        final Assync ass = new Assync();
         editText = (EditText) findViewById(R.id.editText);
 
         textView = (TextView) findViewById(R.id.textView);
@@ -200,7 +229,11 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Perform action on click
-                runThread();
+                String input = editText.getText().toString();
+                input = getTexto();
+                input = input.replace(" ","").replace("\n","");
+
+                ass.execute(input);
             }
         });
 
